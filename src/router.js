@@ -1,17 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from './components/HomePrincipal.vue';
-import VideosDiversos from './components/VideosDiversos.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    // Importação dinâmica para o componente Home
+    component: () => import('./components/HomePrincipal.vue')
   },
   {
     path: '/videos',
     name: 'VideosDiversos',
-    component: VideosDiversos
+    // Importação dinâmica para o componente VideosDiversos
+    component: () => import('./components/VideosDiversos.vue')
   }
 ];
 
