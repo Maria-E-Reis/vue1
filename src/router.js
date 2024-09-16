@@ -12,6 +12,12 @@ const routes = [
     name: 'VideosDiversos',
     // Importação dinâmica para o componente VideosDiversos
     component: () => import('./components/VideosDiversos.vue')
+  },
+  {
+    path: '/imagens',
+    name: 'ImagensDiversas',
+    // Importação dinâmica para o componente ImagensDiversas
+    component: () => import('./components/ImagensDiversas.vue')
   }
 ];
 
