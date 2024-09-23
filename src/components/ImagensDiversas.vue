@@ -9,6 +9,7 @@
           :alt="image.alt"
           class="diversas-imagens"
         />
+        <router-link to="/">Voltar para Home</router-link>
       </div>
     </div>
   </template>
@@ -22,8 +23,8 @@
         images: [
           { src: require('@/assets/image1.jpg'), alt: 'Imagem 1' },
           { src: require('@/assets/image2.jpeg'), alt: 'Imagem 2' },
-          { src: require('@/assets/image3.webp'), alt: 'Imagem 3' },
-          { src: require('@/assets/image4.webp'), alt: 'Imagem 4' },
+          { src: require('@/assets/image3.jpg'), alt: 'Imagem 3' },
+          { src: require('@/assets/image4.jpg'), alt: 'Imagem 4' },
           { src: require('@/assets/image5.jpg'), alt: 'Imagem 5' }
         ]
       };
